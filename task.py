@@ -1,9 +1,21 @@
+
 def speedFine(speed, birthday):
-     if speed >= 61 and speed < 80 and not birthday or speed > 80 and birthday:
-        return "Small Fine"
-     if speed > 80 and not birthday:
-        return "Big Fine"
-     return "No Fine"
+     
+     if birthday:
+        if speed < 80:
+           return "No Fine"
+        elif speed <= 85:
+            return "Small Fine"
+        else:
+            return "Big Fine"
+     else:
+        if speed <= 60:
+           return "No Fine"
+        elif speed <= 80:
+            return "Small Fine"
+        else:
+            return "Big Fine"
+
         
 print(speedFine(60, False))
 print(speedFine(77, False))
