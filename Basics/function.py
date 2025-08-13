@@ -6,6 +6,8 @@ print(greet())
 # explain virtual environment
 # pip install -r requirements.txt
 # pip install --upgrade pip
+# python -m venv venv
+# venv/Scripts/activate
 
 def simpleInterest (p, r, t):
     return (p * r * t)/100
