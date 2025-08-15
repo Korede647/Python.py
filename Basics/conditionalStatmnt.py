@@ -2,7 +2,7 @@ def userAge(age):
     if age < 18:
         return 'You are not qualified to apply🤧.'
     
-    return "Congrats!  You're qualified👌. "
+    return "Congrats! You're qualified👌. "
     
 age = userAge(10)
 
