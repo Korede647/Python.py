@@ -5,6 +5,8 @@ import datetime
 import platform
 import math
 import json
+from math.geometry import areaOfCircle, areaOfRectangle
+from math.algebra import add, multiply
 
 # print(getUser_name("Korede"))
 # print(username("Korede"))
@@ -25,7 +27,7 @@ print(dt.timetuple)
 # print(dt.strftime("%dth"))
 # print(dt.year)
 
-# print(math.sin(30))
+print(math.sin(30))
 # print(pow(3,3))
 numbers = max(45, 3, 43, 89, 24, 12)
 # print(numbers)
