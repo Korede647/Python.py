@@ -1,6 +1,8 @@
 from OOP.calculator import Calculator
 from OOP.managers import Manager
 from OOP.developers import Developer
+from OOP.bank import BankAccount
+from OOP.employees import Employee
 from message import getUser_name
 from message import getUser_name as username
 from message import user
@@ -48,13 +50,31 @@ us = json.dumps(user)
 
 emp1 = Manager("Nathan", 5000, "IT")
 emp2 = Developer("Prince", 2300, "TYPESCRIPT")
+emp3 = Employee("Korede", 5000)
+emp4 = Employee("Alexander", 2300)
 
 
-emp1.showDetails()
-print()
-print("_____******_____****________")
-print()
-emp2.showDetails()
+# emp1.showDetails()
+# print()
+# print("_____******_____****________")
+# print()
+# emp2.showDetails()
 
-calc = Calculator()
-print(calc.add(1,4,90))
+# emp3.calculate_bonus()
+# print()
+# print("_____******_____****________")
+# print()
+# emp4.calculate_bonus()
+# emp2.calculate_bonus()
+# print()
+# print("_____******_____****________")
+# print()
+# emp1.calculate_bonus()
+
+
+# calc = Calculator()
+# print(calc.add(1,4,90))
+
+# acc = BankAccount("Inala", 4500)
+# acc.deposit(45000)
+# print(acc.getBalance())

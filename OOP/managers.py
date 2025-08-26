@@ -11,4 +11,4 @@ class Manager(Employee):
         print(f"Department: {self.department}")
     
     def calculate_bonus(self):
-        return self.salary * 0.10
+        print(self.salary * 0.10)

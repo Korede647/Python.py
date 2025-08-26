@@ -9,4 +9,4 @@ class Employee:
         return f"Employee Name: {self.name}\nSalary: {self.salary}"
     
     def calculate_bonus(self):
-        return self.salary * 0.05
+        print(self.salary * 0.05)
