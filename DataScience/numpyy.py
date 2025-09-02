@@ -1,4 +1,6 @@
 import numpy as np
+# import matplotlib as matplt
+import matplotlib as matplt
 
 arr = np.array((45)) # Create 0D array
 # print(type(arr))
@@ -23,6 +25,7 @@ arr2 = np.array([[1,2,3], [4,5,6], [7,8,9]]) #3D array
 # print(newArr)
 # print(arr5.dtype)
 # print(newArr.dtype)
+
 EdArr = np.array([[1,2,3], [20, 15, 27], [45, 35, 32]])
 # print (EdArr.shape) # prints how many row & column the matrix has
 # print(EdArr.size)
@@ -44,3 +47,23 @@ print("Sales Data: \n", sales)
 print("Total per product: ", sales.sum(axis=0))
 print("Total sales per day: ", sales.sum(axis=1))
 print("Average eggs sold per day: ", sales[::,2].mean())
+
+# matplotlibrary
+
+days = [1, 2, 3, 4, 5]
+sales = [50, 60, 55, 70, 65]
+
+matplt.plot(days, sales, market='o')
+matplt.title("Sales over 5 days")
+matplt.xlabel("Day")
+matplt.ylabel("Unit sold")
+matplt.show()
+
+products = ["Bread", "Milk", "Eggs"]
+unit_sold = [300, 220, 180]
+matplt.bar(products, unit_sold, color =['blue', 'green', 'orange'])
+
+matplt.title("Sales over 5 days")
+matplt.xlabel("Unit sold per product")
+matplt.ylabel("Units")
+matplt.show()
