@@ -25,5 +25,8 @@ viewData = pd.DataFrame(examData)
 # print(viewData.describe())
 
 titanic_data = pd.read_csv("DataScience/titanic.csv")
-print(titanic_data.head())
-# print(titanic_data.tail())  
+# print(titanic_data.head())
+# print(titanic_data.tail())
+
+breastCancerData = pd.read_csv("DataScience/breastCancer.csv")
+print(breastCancerData.head())
