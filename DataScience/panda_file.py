@@ -17,9 +17,13 @@ examData = {
 }
 
 viewData = pd.DataFrame(examData)
-print("====Data======")
-print(viewData)
-print("====Info======")
-print(viewData.info())
-print("====Describe======")
-print(viewData.describe())
+# print("====Data======")
+# print(viewData)
+# print("====Info======")
+# print(viewData.info())
+# print("====Describe======")
+# print(viewData.describe())
+
+titanic_data = pd.read_csv("DataScience/titanic.csv")
+print(titanic_data.head())
+# print(titanic_data.tail())  
