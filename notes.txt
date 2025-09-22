@@ -1,0 +1,9 @@
+Pandas is a python library used for working with data. The name Pandas comes from panel data 
+A term in Economics for multi dimension structered data
+
+Why Pandas is important in DS
+(pip install Pandas)
+
+1. You will get data from excel, databases or csv (comma separated values) files
+2. The data usually has missing values, duplicates, wrong formats.
+3. 
