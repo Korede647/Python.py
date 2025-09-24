@@ -27,6 +27,21 @@ viewData = pd.DataFrame(examData)
 titanic_data = pd.read_csv("DataScience/titanic.csv")
 # print(titanic_data.head())
 # print(titanic_data.tail())
+# print(titanic_data.isnull().sum())
 
-breastCancerData = pd.read_csv("DataScience/breastCancer.csv")
-print(breastCancerData.head())
+# breastCancerData = pd.read_csv("DataScience/breastCancer.csv")
+# print(breastCancerData.head())
+# print(breastCancerData.isnull().sum())
+
+# df["Age"].fillna(df["Age"].median(), inplace = True) #replace missing age with average values
+
+print(df.drop("Cabin", axis = 1, inplace= True))
+
+# df["Embarked"].fillna(titanic_data["embarked"].mode()[0], inplace= True) #replace missing values with most common value
+
+# df["Sex"] = titanic_data["Sex"].map({
+#     "male": 0,
+#     "female": 1
+# })
+
+# df.drop(["passengerId", "Ticket", "Name"], axis= 1, inplace= True)

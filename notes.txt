@@ -6,3 +6,8 @@ Why Pandas is important in DS
 
 1. You will get data from excel, databases or csv (comma separated values) files
 2. The data usually has missing values, duplicates, wrong formats.
+
+How to Clean Data (Data Cleaning)
+
+6 pages, difference between regression and classification in machine learning
+what is feature engineering
