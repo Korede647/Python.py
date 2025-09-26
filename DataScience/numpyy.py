@@ -1,6 +1,7 @@
 import numpy as np
 # import matplotlib as matplt
 import matplotlib as matplt
+import matplotlib.pyplot as plt
 
 arr = np.array((45)) # Create 0D array
 # print(type(arr))
@@ -53,17 +54,17 @@ print("Average eggs sold per day: ", sales[::,2].mean())
 days = [1, 2, 3, 4, 5]
 sales = [50, 60, 55, 70, 65]
 
-matplt.plot(days, sales, market='o')
-matplt.title("Sales over 5 days")
-matplt.xlabel("Day")
-matplt.ylabel("Unit sold")
-matplt.show()
+plt.plot(days, sales, marker='o')
+plt.title("Sales over 5 days")
+plt.xlabel("Day")
+plt.ylabel("Unit sold")
+plt.show()
 
 products = ["Bread", "Milk", "Eggs"]
 unit_sold = [300, 220, 180]
-matplt.bar(products, unit_sold, color =['blue', 'green', 'orange'])
+plt.bar(products, unit_sold, color =['blue', 'green', 'orange'])
 
-matplt.title("Sales over 5 days")
-matplt.xlabel("Unit sold per product")
-matplt.ylabel("Units")
-matplt.show()
+plt.title("Sales over 5 days")
+plt.xlabel("Unit sold per product")
+plt.ylabel("Units")
+plt.show()
